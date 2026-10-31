@@ -1,9 +1,10 @@
-Name=input("What is Your Name = ")
-age=input("What is Your Age = ")
-age2=int(age)
-
-print("Name is ",Name)
-print("Age is ",age)
-print("Type of Name = ",type(Name))
-print("Type of age = ",type(age))
-print("Type of age2 = ",type(age2))
+user_input=input("Enter Comma Seprated Numbers : ")
+list_var=user_input.split(",")
+print(list_var)
+list_int=[]
+index=0
+while index<len(list_var):
+    list_int.append(int(list_var[index]))
+    index+=1
+print(list_var)
+print(list_int)
